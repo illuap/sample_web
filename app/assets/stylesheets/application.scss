@@ -1,17 +1,28 @@
-$body-bg:			#2c3e50;
-$navbar-default-bg: #3498db;
-
+$body-bg:			#58A4B0;
+$navbar-default-bg: #D8DBE2;
+$container-desktop: 700px;
+$container-large-desktop: 820px;
+$jumbotron-bg: #58A4B0;
 @import "bootstrap-sprockets";
 @import "bootstrap";
 
+html {
+  position: relative;
+  min-height: 100%;
+}
+body{
+
+	margin-bottom: 160px;
+}
+
 .footer {
-	padding-top: 30px;
+	padding-top: 0px;
   position: absolute;
   bottom: 0;
   width: 100%;
   /* Set the fixed height of the footer here */
-  min-height: 60px;
-  background-color: #f5f5f5;
+  height: 160px;
+  background-color: #1B1B1E;
 }
 
 .center{
@@ -25,3 +36,10 @@ $navbar-default-bg: #3498db;
 .right{
 	text-align: right;
 }
+ 
+ #mainContent{
+  width: 100%;
+  min-height: 400px; 
+  margin: 0px;
+  background-color: #D8DBE2;
+ }
