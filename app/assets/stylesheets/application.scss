@@ -1,8 +1,11 @@
-$body-bg:			#58A4B0;
-$navbar-default-bg: #D8DBE2;
-$container-desktop: 700px;
-$container-large-desktop: 820px;
-$jumbotron-bg: #58A4B0;
+$body-bg:			#000;
+$navbar-default-bg: #9bd7d5;
+$container-desktop: 800px;
+$container-large-desktop: 940px;
+$alert-padding: 0px;
+$grid-gutter-width: 10px;
+$btn-default-bg: #9bd7d5;
+$btn-default-color: #fff;
 @import "bootstrap-sprockets";
 @import "bootstrap";
 
@@ -11,10 +14,19 @@ html {
   min-height: 100%;
 }
 body{
-
+  padding: 0;
 	margin-bottom: 160px;
+  background-color: #D8DBE2;
 }
+h3{
+  margin: 5px
+}
+h2{
 
+}
+hr{
+  margin: 5px;
+}
 .footer {
 	padding-top: 0px;
   position: absolute;
@@ -23,6 +35,7 @@ body{
   /* Set the fixed height of the footer here */
   height: 160px;
   background-color: #1B1B1E;
+  border-top:solid #151510;
 }
 
 .center{
@@ -35,11 +48,82 @@ body{
 
 .right{
 	text-align: right;
+} 
+#pageTitle{
+  margin-top: 30px;
+  padding: 0px 20px ;
 }
- 
- #mainContent{
+#pageHeader{
   width: 100%;
-  min-height: 400px; 
+  min-height: 10px;
   margin: 0px;
-  background-color: #D8DBE2;
- }
+  padding: 20px 0px;
+  background-color: #555;
+  font-weight: bold;  
+  color:#fff;
+}
+
+#banner{
+  width: 100%;
+  min-height: 400px;
+  margin: 0px;
+  padding: 0px;
+  background: url("city.jpg") center center no-repeat;
+  background-size: cover;
+}
+#bannerContent{
+  background-color: rgba(0,0,0,0.2);
+  color: rgba(255,255,255,1);
+  min-height: 400px;
+  height: 100%;
+  width: 100%;
+  padding: 20px 40px;
+  margin-top: 0px;
+  float: left;
+}
+
+#bannerContent h1{
+  margin-top: 8%;
+  font-size: 3em
+}
+#bannerContent p{
+  font-size: 1.5em;
+}
+
+
+#mainContent{
+  width: 100%;
+  min-height: 800px; 
+  margin: 0px;
+  height: 100%;
+  border:none;
+  border-top:solid #C2C5CB;
+}
+
+.pStyle{
+  font-weight: normal; 
+  color:rgb(119, 119, 119); 
+  padding: 5px; 
+  font-size: 12px;
+font-family: 'Roboto', sans-serif;
+}
+
+.image{
+  border: 5px solid #C2C5CB;
+  margin: 20px;
+  margin-right: 20px;
+}
+.btnBottomRight{
+  float:right;
+  margin-right: 20px
+}
+.col-centered{
+    float: none;
+    margin: 0 auto;
+}
+
+.floatLeft{
+  min-width: 100px;
+  display: inline-block;
+  float: left;
+}
