@@ -18,6 +18,16 @@ body{
 	margin-bottom: 160px;
   background-color: #D8DBE2;
 }
+footer{
+  padding-top: 20px;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  /* Set the fixed height of the footer here */
+  height: 160px;
+  background-color: #1B1B1E;
+  border-top:solid #151510;
+}
 h3{
   margin: 5px
 }
@@ -28,20 +38,11 @@ hr{
   margin: 5px;
 }
 .footer {
-	padding-top: 0px;
-  position: absolute;
-  bottom: 0;
-  width: 100%;
-  /* Set the fixed height of the footer here */
-  height: 160px;
-  background-color: #1B1B1E;
-  border-top:solid #151510;
-}
 
-.center{
-	text-align: center;
 }
-
+.centerText{
+  text-align: center;
+}
 .left{
 	text-align: left;
 }
@@ -123,7 +124,24 @@ font-family: 'Roboto', sans-serif;
 }
 
 .floatLeft{
-  min-width: 100px;
   display: inline-block;
   float: left;
+}
+
+
+.center{
+  margin: 0 auto;
+  display:block;
+  min-height: 10px;
+}
+
+.footerContainer{
+  width: 30%;
+  margin: 0 auto;
+}
+.footerButton{
+display: inline-block;
+padding: 10px 15px;
+background-color: blue;
+margin-bottom: 5px;
 }
